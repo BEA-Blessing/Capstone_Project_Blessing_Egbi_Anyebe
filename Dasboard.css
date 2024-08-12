@@ -1,0 +1,497 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Monserrat, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header Section */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #007DFE;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    margin-bottom: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.dashboard-header h1:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+.dashboard-header h1 {
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #007DFE, #00C6FF);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: black;
+    margin-left: 10px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    line-height: 1; /* Adjust if needed */
+    vertical-align: middle; /* Ensure alignment */
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    z-index: 1;
+    right: 0;
+    margin-right: 10px;
+}
+
+.dropdown-content li a {
+    padding: 10px 15px;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    margin-right: 10px;
+}
+
+.dropdown-content li:hover a {
+    color: red;
+}
+
+.logout-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Main Dashboard Layout */
+.dashboard-main {
+    display: flex;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+/* Sidebar Section */
+.user-sidebar {
+    width: 25%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.profile-picture {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.profile-picture img:hover {
+    transform: scale(1.1);
+}
+
+.username {
+    text-align: center;
+    font-size: 20px;
+    color: #007DFE;
+    margin-bottom: 10px;
+}
+
+.edit-profile {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #007DFE;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.edit-profile:hover {
+    background-color: #005bb5;
+}
+
+.user-options {
+    list-style: none;
+}
+
+.user-options li {
+    margin: 10px 0;
+}
+
+.user-options li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.user-options li a:hover {
+    color: #007DFE;
+}
+
+/* Feed Section */
+.feed {
+    width: 75%;
+}
+
+/* Post Creation Section */
+.create-post {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.create-post textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.post-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-options button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007DFE;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.post-options button:hover {
+    background-color: #005bb5;
+}
+
+.upload-image {
+    background-color: #28a745;
+}
+
+.upload-image:hover {
+    background-color: #218838;
+}
+
+/* Displaying Posts */
+.posts {
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-user-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.post-user-pic:hover {
+    transform: scale(1.1);
+}
+
+.post-content {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007DFE;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.like-button {
+    background-color: #007DFE;
+}
+
+.like-button:hover {
+    background-color: #005bb5;
+}
+
+.comment-button {
+    background-color: #28a745;
+}
+
+.comment-button:hover {
+    background-color: #218838;
+}
+
+.share-button {
+    background-color: #17a2b8;
+}
+
+.share-button:hover {
+    background-color: #138496;
+}
+
+/* Comments Section */
+.comments-section {
+    margin-top: 10px;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.comment-user-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.comment-user-pic:hover {
+    transform: scale(1.1);
+}
+
+.comment-content {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive Design */
+
+/* Large Tablets and Small Desktops (max-width: 1200px) */
+@media screen and (max-width: 1200px) {
+    .dashboard-main {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .user-sidebar {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .feed {
+        width: 100%;
+    }
+
+    .post-user-pic,
+    .profile-picture img,
+    .comment-user-pic {
+        width: 40px;
+        height: 40px;
+    }
+
+    .post-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .post-actions button {
+        padding: 8px 16px;
+    }
+
+    .create-post textarea {
+        padding: 8px;
+    }
+}
+
+/* Tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .dashboard-header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 40px;
+        margin-right: 5px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 18px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-sidebar {
+        padding: 15px;
+    }
+
+    .profile-picture img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .username {
+        font-size: 18px;
+    }
+
+    .feed {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .create-post {
+        padding: 15px;
+    }
+
+    .post-user-pic,
+    .profile-picture img,
+    .comment-user-pic {
+        width: 30px;
+        height: 30px;
+    }
+
+    .post-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .post-content {
+        font-size: 14px;
+    }
+
+    .post-actions button {
+        padding: 6px 12px;
+    }
+}
+
+/* Mobile Devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .dashboard-header h1 {
+        font-size: 16px;
+    }
+
+    .navbar li {
+        margin: 0 5px;
+    }
+
+    .user-sidebar {
+        padding: 10px;
+    }
+
+    .profile-picture img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .username {
+        font-size: 16px;
+    }
+
+    .create-post {
+        padding: 10px;
+    }
+
+    .post-user-pic,
+    .comment-user-pic {
+        width: 20px;
+        height: 20px;
+    }
+
+    .post-content {
+        font-size: 12px;
+    }
+
+    .post-actions button {
+        padding: 4px 8px;
+    }
+
+    .comment {
+        font-size: 12px;
+    }
+
+    .dashboard-main {
+        padding: 10px 5px;
+    }
+}

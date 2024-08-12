@@ -1,0 +1,189 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Clear floats for sections */
+section {
+    clear: both;
+}
+
+/* Body */
+body {
+    font-family: Monserrat, sans-serif;
+    color: #333;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #007DFE;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    margin-bottom: 70px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #007DFE, #00C6FF);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: black;
+    margin-left: 10px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    line-height: 1; /* Adjust if needed */
+    vertical-align: middle; /* Ensure alignment */
+}
+
+.logo-text:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar li a:hover {
+color: white;
+}
+
+.navbar li:hover > .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    margin: 0;
+}
+
+.dropdown-content li a {
+    padding: 10px 20px;
+    display: block;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.dropdown-content li a:hover {
+    background-color: #007bff;
+}
+
+
+/* Login Section */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.login-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-section {
+    background-image: url('Images/Free\ Vector\ _\ Anxiety\ concept\ illustration.jpeg');
+    background-size:contain;
+    background-position: center;
+    padding: 60px 20px;
+    color: #fff;
+}
+
+.login-container h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.login-container p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-btn {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration:underline
+}

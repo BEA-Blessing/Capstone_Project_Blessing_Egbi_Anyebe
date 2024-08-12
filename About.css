@@ -1,0 +1,256 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Clear floats for sections */
+section {
+    clear: both;
+}
+
+/* Body */
+body {
+    font-family: Monserrat, sans-serif;
+    color: #333;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #007DFE;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    margin-bottom: 70px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #007DFE, #00C6FF);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: black;
+    margin-left: 10px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    line-height: 1; /* Adjust if needed */
+    vertical-align: middle; /* Ensure alignment */
+}
+
+.logo-text:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar li a:hover {
+color: white;
+}
+
+.navbar li:hover > .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    margin: 0;
+}
+
+.dropdown-content li a {
+    padding: 10px 20px;
+    display: block;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.dropdown-content li a:hover {
+    background-color: #007bff;
+}
+
+
+.about-section {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    margin-top: 100px;
+}
+
+.about-section:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.content {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-container {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.text-container h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.text-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    /* Tablet */
+    .header {
+        padding: 15px;
+        margin-bottom: 60px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .about-section {
+        flex-direction: column;
+        padding: 30px 15px;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    .text-container {
+        padding-left: 0;
+    }
+
+    .image-container {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .text-container h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Mobile Phone */
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        margin-bottom: 50px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .navbar li {
+        margin: 5px 0;
+    }
+
+    .about-section {
+        padding: 20px 10px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .text-container h2 {
+        font-size: 1.6rem;
+    }
+
+    .text-container p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Smaller Mobile Phones */
+    .header {
+        padding: 5px;
+        margin-bottom: 40px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .about-section {
+        padding: 15px 5px;
+    }
+
+    .text-container h2 {
+        font-size: 1.4rem;
+    }
+
+    .text-container p {
+        font-size: 0.95rem;
+    }
+}

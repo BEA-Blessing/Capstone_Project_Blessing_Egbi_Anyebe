@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="Dasboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Dashboard Header with Navigation -->
+    <header class="dashboard-header">
+        <div class="logo">
+            <img src="Images/logo_23-2148820804.avif" alt="BTS Logo">
+            <h1>BTS Dasboard</h1>
+        </div>
+        <ul class="navbar">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Profile.html">Profile</a></li>
+            <li><a href="messages.html">Messages</a></li>
+            <li><a href="Notification.html">Notifications</a></li>
+            <li><a href="Settings.html">Settings</a></li>
+            <li class="dropdown">
+                <a href="#" class="logout-button">Logout</a>
+                <ul class="dropdown-content">
+                    <li><a href="Capstone_Project.html">Logout</a></li>
+                </ul>
+            </li>
+        </ul>        
+    </header>
+
+    <!-- Main Dashboard Content -->
+    <main class="dashboard-main">
+        <!-- Sidebar for User Information and Profile Picture -->
+        <aside class="user-sidebar">
+            <div class="profile-picture">
+                <img src="Images/profile image.jpg" alt="User Profile Picture" id="profile-pic">
+                <input type="file" id="upload-profile-pic" style="display: none;">
+            </div>
+            <h2 class="username">Username</h2>
+            <a href="Settings.html" class="edit-profile">Edit Profile</button>
+            </a>
+            </a>
+            <ul class="user-options">
+                <li><a href="Profile.html">My Posts</a></li>
+                <li><a href="Profile.html">Friends</a></li>
+                <li><a href="Profile.html">Groups</a></li>
+            </ul>
+        </aside>
+
+        <!-- Feed Section for Posts -->
+        <section class="feed">
+            <!-- Post Creation Section -->
+            <div class="create-post">
+                <textarea placeholder="What's on your mind?"></textarea>
+                <div class="post-options">
+                    <button class="upload-image">Upload Image</button>
+                    <button class="post-button">Post</button>
+                </div>
+            </div>
+
+            <!-- Dashboard Container -->
+    <div class="dashboard-container">
+        
+        <!-- Post 1 -->
+        <div class="post">
+            <div class="post-header">
+                <img src="Images/thoughts.jpg" alt="User Profile Picture" class="post-user-pic">
+                <h4>Chukwuebuka Joy</h4>
+            </div>
+            <div class="post-content">
+                Find your strength within, and let it guide you to healing.
+            </div>
+            <div class="post-actions">
+                <button class="like-button">Like</button>
+                <button class="comment-button">Comment</button>
+                <button class="share-button">Share</button>
+            </div>
+            <div class="comments-section">
+                <div class="comment">
+                    <img src="Images/Vision.jpg" alt="Commenter Profile Picture" class="comment-user-pic">
+                    <p class="comment-content"><strong>Jane Smith:</strong> i take steps everyday towards healing.</p>
+                </div>
+                <div class="comment">
+                    <img src="Images/Depressed-girl_900x700_acf_cropped.jpg" alt="Commenter Profile Picture" class="comment-user-pic">
+                    <p class="comment-content"><strong>Taiwo Vivian:</strong> @Jane Smith keep it up, You are capable of overcoming anything. Believe in yourself .</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Post 2 -->
+        <div class="post">
+            <div class="post-header">
+                <img src="Images/Free Vector _ Anxiety concept illustration.jpeg" alt="User Profile Picture" class="post-user-pic">
+                <h4>Lucy Mark</h4>
+            </div>
+            <div class="post-content">
+                Had an amazing time at the conference today! So many inspiring talks and great networking opportunities.
+            </div>
+            <div class="post-actions">
+                <button class="like-button">Like</button>
+                <button class="comment-button">Comment</button>
+                <button class="share-button">Share</button>
+            </div>
+            <div class="comments-section">
+                <div class="comment">
+                    <img src="Images/profile image.jpg" alt="Commenter Profile Picture" class="comment-user-pic">
+                    <p class="comment-content"><strong>Blessing Anyebe:</strong> That sounds great! What was your favorite talk?</p>
+                </div>
+                <div class="comment">
+                    <img src="Images/Beyond the Stigma logo.jpeg" alt="Commenter Profile Picture" class="comment-user-pic">
+                    <p class="comment-content"><strong>Sarah Lee:</strong> So jealous! I wish I could have been there.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Post 3 -->
+        <div class="post">
+            <div class="post-header">
+                <img src="Images/Goal.jpg" alt="User Profile Picture" class="post-user-pic">
+                <h4>Adenike oladipo</h4>
+            </div>
+            <div class="post-content">
+                Just finished reading a fantastic book on mindfulness. Highly recommend it to anyone looking to improve their mental well-being.
+            </div>
+            <div class="post-actions">
+                <button class="like-button">Like</button>
+                <button class="comment-button">Comment</button>
+                <button class="share-button">Share</button>
+            </div>
+            <div class="comments-section">
+                <div class="comment">
+                    <img src="Images/thoughts.jpg" alt="Commenter Profile Picture" class="comment-user-pic">
+                    <p class="comment-content"><strong>Jemima Ada:</strong> Which book was it? I'm always looking for good recommendations.</p>
+                </div>
+                <div class="comment">
+                    <img src="Images/Depressed-girl_900x700_acf_cropped.jpg" alt="Commenter Profile Picture" class="comment-user-pic">
+                    <p class="comment-content"><strong>Betty okpara:</strong> Mindfulness books are great. Would love to check it out.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
