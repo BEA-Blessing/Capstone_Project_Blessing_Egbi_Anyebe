@@ -352,3 +352,150 @@ h1 {
     color: #007DFE;
 }
 
+/* Responsive Design */
+
+/* Laptops (up to 1200px) */
+@media (max-width: 1200px) {
+    .header {
+        padding: 15px;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container {
+        max-width: 700px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        margin: 10px 0;
+    }
+}
+
+/* Tablets (up to 768px) */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .contact-us {
+        padding: 50px 10px;
+    }
+
+    .social-media h2 {
+        font-size: 22px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        margin: 20px 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    align-items: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+}
+
+/* Mobile Phones (up to 480px) */
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        width: 30px;
+    }
+
+    .logo-text {
+        font-size: 16px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar li {
+        margin: 5px 0;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .contact-us {
+        padding: 40px 10px;
+    }
+
+    .social-media h2 {
+        font-size: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        margin: 10px 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
