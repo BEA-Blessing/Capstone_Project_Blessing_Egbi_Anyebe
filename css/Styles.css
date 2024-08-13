@@ -194,7 +194,7 @@ color: white;
 .main-section {
     position: relative;
     height: 100vh;
-    background-image: url('Images/Depressed-girl_900x700_acf_cropped.jpg');
+    background-image: url('../Images/Depressed-girl_900x700_acf_cropped.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
